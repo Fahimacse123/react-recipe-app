@@ -18,9 +18,9 @@ const App = () => {
 
 
   const getRecipes = async () => {
-    const response = await fetch(`https://cors-anywhere.herokuapp.com/https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
+    const res = await fetch(`https://cors-anywhere.herokuapp.com/https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`); //using another website for CORS 
 
-    const data = await response.json();
+    const data = await res.json();
     setRecipes(data.hits);
     console.log(data.hits)
   };
@@ -66,7 +66,6 @@ const App = () => {
             image={recipe.recipe.image}
             ingredients={recipe.recipe.ingredients}
           />
-
         ))}
       </div>
       <Footer />
