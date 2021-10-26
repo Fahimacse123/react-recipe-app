@@ -16,6 +16,8 @@
   border: none;
   padding: 10px;
   font-size: 18px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .search-button {
@@ -24,6 +26,8 @@
   padding: 10px 20px;
   color: white;
   font-size: 18px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .recipes{
   display:flex;
