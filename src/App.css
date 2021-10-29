@@ -14,8 +14,9 @@
 .search-bar {
   width: 50%;
   border: none;
-  padding: 10px;
-  font-size: 18px;
+  outline: none;
+  padding: 11px;
+  font-size: 19px;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -28,6 +29,7 @@
   font-size: 18px;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
+  outline: none;
 }
 .recipes{
   display:flex;
